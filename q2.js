@@ -22,6 +22,6 @@ let toyInventory2023 = [
 
 Use one of the array looping methods to solve this puzzle.*/
 
-const safeToys = toyInventory2023.filter(noChem => noChem.containsChemicals === false).map(noChem =>noChem.name);
+const removeFaultyToys = toyInventory2023.filter(toyInventory => toyInventory.containsChemicals === false).map(toyInventory =>toyInventory.name);
 
-console.log(safeToys)
+console.log(removeFaultyToys)
